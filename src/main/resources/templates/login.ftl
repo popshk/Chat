@@ -4,4 +4,5 @@
 <@c.page>
     Login:
     <@f.login "/login"/>
+    <@f.button "/registration" "Create Account"/>
 </@c.page>
