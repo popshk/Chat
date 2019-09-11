@@ -10,6 +10,15 @@ public class Message {
     @Id
     private String id;
     private String text;
+    private String date;
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
 
     public String getId() {
         return id;
@@ -27,7 +36,8 @@ public class Message {
         this.text = text;
     }
 
-    public Message(String text) {
+    public Message(String text, String date) {
         this.text = text;
+        this.date = date;
     }
 }

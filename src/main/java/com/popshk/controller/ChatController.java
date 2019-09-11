@@ -10,6 +10,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.xml.crypto.Data;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
+
 @Controller
 @RequestMapping("/chat")
 public class ChatController {
@@ -26,7 +31,9 @@ public class ChatController {
 
     @PostMapping
     public String sendMessage(@RequestParam String text){
-        Message message = new Message(text);
+        SimpleDateFormat dateFormat =new SimpleDateFormat();
+        String data = dateFormat.format(new Date());
+        Message message = new Message(text,data);
         messageRepository.save(message);
         return "redirect:/chat";
     }

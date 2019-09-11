@@ -5,6 +5,7 @@
     <div style="height:500px;width:400px; overflow : scroll;">
         <#list messages as message>
             <div>
+                <p>${message.date}</p>
                 <p>${message.text}</p>
             </div>
             <#else>
