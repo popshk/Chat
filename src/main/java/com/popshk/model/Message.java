@@ -11,6 +11,15 @@ public class Message {
     private String id;
     private String text;
     private String date;
+    private String userName;
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String user) {
+        this.userName = user;
+    }
 
     public String getDate() {
         return date;
@@ -36,8 +45,9 @@ public class Message {
         this.text = text;
     }
 
-    public Message(String text, String date) {
+    public Message(String text, String date,String userName) {
         this.text = text;
         this.date = date;
+        this.userName = userName;
     }
 }
