@@ -29,10 +29,6 @@
             <optional>true</optional>
         </dependency>
         <dependency>
-            <groupId>com.mongodb</groupId>
-            <artifactId>mongo-java-driver</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-mongodb</artifactId>
         </dependency>
@@ -42,7 +38,7 @@
         </dependency>
     </dependencies>
      <properties>
-        <java.version>1.8</java.version>
+        <java.version>11</java.version>
     </properties>
 
 
